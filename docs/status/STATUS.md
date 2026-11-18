@@ -19,6 +19,7 @@ _Generated automatically by `status-sync` on the VPS (daily 06:40 ET). Do not ed
 ## Milestone log
 
 ### 2026-11-18
+- Public MCP deployed at https://mcp.smartypos.us/mcp (9 read-only tools, systemd smartypos-public-mcp, nginx /mcp)
 - **Status page created.** The table above is refreshed daily by `status-sync` (06:40 ET); milestones are added with `status-log`. Rule: every important step gets a line here.
 - Seeded from the git history of `main` (last 90 days; sparse projects show their latest activity) and the server's reports.
 - SmartyPOS public read-only MCP server (Syrve / iiko USA)
