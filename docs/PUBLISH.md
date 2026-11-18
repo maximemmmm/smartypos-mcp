@@ -15,7 +15,7 @@ Name `us.smartypos/syrve-pos` is verified by HTTP domain auth for `smartypos.us`
 2. Login and publish:
    ```bash
    export PATH=$HOME/bin:$PATH
-   mcp-publisher login http --domain smartypos.us --private-key-file /home/openclaw/.secrets/mcp-registry/private-key.hex
+   mcp-publisher login http --domain smartypos.us --private-key "$(cat /home/openclaw/.secrets/mcp-registry/private-key.hex)"
    cd /home/openclaw/work/smartypos-mcp
    mcp-publisher validate
    mcp-publisher publish
