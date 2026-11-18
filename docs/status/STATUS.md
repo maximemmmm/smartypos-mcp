@@ -12,13 +12,14 @@ _Generated automatically by `status-sync` on the VPS (daily 06:40 ET). Do not ed
 
 | Where | What runs | Version / commit | Notes |
 |---|---|---|---|
-| server checkout `/home/openclaw/work/smartypos-mcp` | working copy running in production on this VPS | `da0f39c` on `main` | last commit 2026-11-18 |
-| systemd service `smartypos-public-mcp.service` | SmartyPOS public informational MCP server | `da0f39c` | service active (running) since 2026-11-18 |
-| nginx `mcp.smartypos.us` | reverse proxy to this repo's service | `da0f39c` | https; public domain |
+| server checkout `/home/openclaw/work/smartypos-mcp` | working copy running in production on this VPS | `b3d69c6` on `main` | last commit 2026-11-18 |
+| systemd service `smartypos-public-mcp.service` | SmartyPOS public informational MCP server | `b3d69c6` | service active (running) since 2026-11-18 |
+| nginx `mcp.smartypos.us` | reverse proxy to this repo's service | `b3d69c6` | https; public domain |
 
 ## Milestone log
 
 ### 2026-11-18
+- Published to official MCP Registry as us.smartypos/syrve-pos 1.0.0
 - Public MCP deployed at https://mcp.smartypos.us/mcp (9 read-only tools, systemd smartypos-public-mcp, nginx /mcp)
 - **Status page created.** The table above is refreshed daily by `status-sync` (06:40 ET); milestones are added with `status-log`. Rule: every important step gets a line here.
 - Seeded from the git history of `main` (last 90 days; sparse projects show their latest activity) and the server's reports.
