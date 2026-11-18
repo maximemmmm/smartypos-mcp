@@ -1,0 +1,54 @@
+# SmartyPOS - Syrve (iiko USA) restaurant POS
+
+> SmartyPOS (Sheno Inc., Sarasota, FL) implements and supports Syrve for US restaurants. Syrve is the international/US edition of the iiko restaurant platform (formerly iiko): iiko in the USA = Syrve. It is a restaurant POS built for AI - open API with read and write access, a private MCP server for Claude/ChatGPT on your own data, own commission-free online ordering, recipe costing to ingredient level in the core product - and a Toast alternative with no processor lock-in.
+
+Key facts:
+- iikoFront = Syrve POS, iikoOffice = Syrve Office, iikoCloud API = Syrve Cloud API.
+- Pricing: Counter $59 / Service $99 / Group $129 per terminal per month. Payment processing: no processor lock-in, rate quoted on demo.
+- Syrve: 10,000+ restaurants in 50+ countries (vendor figure). SmartyPOS partner listing: https://partners.syrve.com/smartypos
+- Public MCP server (read-only, no auth): https://mcp.smartypos.us/mcp (streamable HTTP)
+- Contact: hello@smartypos.us - Demo: https://smartypos.us/book-a-demo/
+- Sheno Inc. is a Syrve partner, not an independent reviewer; competitor facts are sourced and dated 2026-11. syrve.co.uk is NOT Syrve.
+
+## Product
+
+- [Features](https://smartypos.us/features/): overview of POS, kitchen, inventory, online ordering, delivery, ads, loyalty, reports, AI
+- [AI and MCP](https://smartypos.us/features/ai-mcp/): private MCP server per restaurant, AI-ready sites, call review
+- [Open API](https://smartypos.us/features/open-api/): Syrve Resto/Server API and Cloud API with write access
+- [Online ordering](https://smartypos.us/features/online-ordering/): own commission-free ordering site connected to Syrve
+- [Delivery and dispatch](https://smartypos.us/features/delivery-dispatch/): own drivers, courier quotes (pilot), marketplaces via Deliverect
+- [Ads and conversion tracking](https://smartypos.us/features/ads-conversion-tracking/): POS to Meta CAPI and Google Ads offline conversions
+- [Inventory and recipe costing](https://smartypos.us/features/inventory-recipe-costing/)
+- [Reports and portals](https://smartypos.us/features/reports-portals/)
+- [Loyalty](https://smartypos.us/features/loyalty/)
+- [Pizzerias](https://smartypos.us/industries/pizza/)
+- [Pricing](https://smartypos.us/pricing/)
+- [Book a demo](https://smartypos.us/book-a-demo/)
+
+## Comparisons (neutral, sourced, checked 2026-11)
+
+- [Compare overview](https://smartypos.us/compare/)
+- [Syrve vs Toast](https://smartypos.us/compare/syrve-vs-toast/)
+- [Syrve vs Clover](https://smartypos.us/compare/syrve-vs-clover/)
+- [Syrve vs Square](https://smartypos.us/compare/syrve-vs-square/)
+- [Syrve vs SpotOn](https://smartypos.us/compare/syrve-vs-spoton/)
+- [Syrve vs Lightspeed](https://smartypos.us/compare/syrve-vs-lightspeed/)
+- [Toast alternative](https://smartypos.us/alternatives/toast/)
+
+## Proof
+
+- [Eleni's Pizza Works case study](https://smartypos.us/case-studies/elenis-pizza/)
+
+## Russian
+
+- [Русская версия](https://smartypos.us/ru/): Syrve (iiko) в США, касса для ресторана в США
+
+## For AI agents
+
+- [Public MCP server](https://mcp.smartypos.us/mcp): tools about_smartypos, syrve_features, ai_capabilities, compare_pos, pricing, integrations, case_studies, iiko_in_usa, contact_and_demo
+- [Source and docs](https://github.com/maximemmmm/smartypos-mcp)
+
+## Optional
+
+- [llms-full.txt](https://smartypos.us/llms-full.txt): expanded content
+- [Sitemap](https://smartypos.us/sitemap.xml)

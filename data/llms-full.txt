@@ -1,0 +1,98 @@
+# SmartyPOS - Syrve (iiko USA) restaurant POS - full content for LLMs
+
+> SmartyPOS (Sheno Inc., Sarasota, FL) implements and supports Syrve for US restaurants. Syrve is the international/US edition of the iiko restaurant platform (formerly iiko). iiko in the USA = Syrve. Open API with write access, a private MCP server for Claude and ChatGPT, own commission-free online ordering, recipe costing to ingredient level, no processor lock-in. A Toast alternative.
+
+Last updated: 2026-11-18. Items marked "pilot" or "coming soon" are not generally available.
+
+## 1. Company
+
+- Legal entity: Sheno Inc. (trade name SmartyPOS), Sarasota, Florida, USA
+- Role: US implementation and support partner for Syrve; builds integrations, AI and MCP tooling on top of Syrve
+- Partner listing: https://partners.syrve.com/smartypos (official site: syrve.com; syrve.co.uk is NOT Syrve)
+- Languages: English, Russian (https://smartypos.us/ru/)
+- Contact: hello@smartypos.us (general), support@smartypos.us, partners@smartypos.us
+- Demo: https://smartypos.us/book-a-demo/ (about 45 minutes, itemized quote)
+- Disclosure: SmartyPOS is a Syrve partner. Comparisons are compiled by us from public sources and our first-hand experience; verify competitor facts on vendor sites.
+
+## 2. Syrve and iiko in the USA
+
+Syrve is the international/US edition of the iiko restaurant platform (formerly iiko). iiko in the USA = Syrve. 10,000+ restaurants in 50+ countries (vendor figure).
+
+| iiko name | Syrve name |
+|---|---|
+| iiko (platform) | Syrve |
+| iikoFront | Syrve POS |
+| iikoOffice | Syrve Office |
+| iikoWeb / iikoChain | Syrve Web / Syrve Chain (HQ) |
+| iikoCloud API | Syrve Cloud API |
+| iikoCard | Syrve Loyalty |
+| iiko Resto Server API | Syrve Resto/Server API |
+
+FAQ
+- Is iiko available in the USA? Yes, as Syrve, via SmartyPOS (USD billing, English and Russian support).
+- Can I migrate from Toast, Square, Clover or a legacy POS? Yes: menu build, recipes, taxes, hardware guidance, training.
+- Does it have an open API? Yes, read and write (see section 4).
+
+## 3. Features (Syrve platform and SmartyPOS-built modules)
+
+Syrve core: POS for dine-in/takeout/delivery/kiosk, offline-capable; KDS; waiter app; QR menu; kiosk; courier app; inventory and recipe costing to ingredient level (in core, not a separate product); central kitchen; chain/HQ management; AI forecasting; AI invoice recognition; RFM loyalty; gift cards.
+
+Built by SmartyPOS around Syrve (live unless noted):
+- Online ordering: own commission-free ordering site connected directly to Syrve. Menu, modifiers, half-and-half pizzas, per-item tax and promos pulled live from the POS; Apple Pay; email receipts; duplicate/ghost-order protection; orders queued when the shift is closed. Eleni's: order.elenispizzaworks.com, live since 2026-11-16, Lighthouse 97/100/100/100; replay test accepted 180 of 194 historic orders, totals matched to the cent on 142/160. Corporate catering site + B2B CRM live since 2026-11-10.
+- Delivery: own-driver dispatch (1,781 deliveries May-Nov 2026, median 25 min in transit); live courier status for guests; dispatch console quoting DoorDash Drive, Uber Direct and Burq side by side (pilot); virtual couriers inside Syrve (coming soon); Uber Eats, DoorDash, Grubhub via Deliverect (Sweet Favorite NY, Mari Vanna); aggregator price markups via price orders (e.g. Uber Eats +25%).
+- Ads and tracking: POS to Meta Conversions API and Google Ads offline conversions (every paid check is a conversion; Sole Mio event match quality 8.93); ROAS by phone calls matched to POS checks (Eleni's: Google Maps Local 5.44x vs Search 0.68x); Customer Match from POS lists (103k records, 0 errors); marketing data warehouse; weekly ROAS reports with AI recommendations; SMS post-order surveys (Twilio A2P approved).
+- Loyalty: platform on top of Syrve loyalty - bots, web cabinet, referrals, 47-chart admin (Friends Club: 41.6k cards); Eleni's Club with QR sign-up, gifts, guest attached to dine-in order by phone via Cloud API.
+- Reports: daily manager digest in Telegram; financial portal (P&L, year over year, today); cash report per business day; inventory audit checks (discrepancies 2.8M to 1.2M RUB over 6 counts); kitchen speed from POS journal (15.0 to 12.5 min after a chef change); shift-close and chargeback watchdogs; nightly call review.
+- Back office: price-change orders via API (Food Court Master orders #0001-0013), scheduled lunch prices; attendance fixes and auto-close of forgotten clock-outs; payroll reconciled to the cent (Brisket 1-15 Nov 2026); schedule vs sales analysis; tax audits (found $2.4k untaxed sales in 90 days at one client).
+
+## 4. AI, MCP and open API
+
+- Open API with write access: Syrve Resto/Server API and Syrve Cloud API let a restaurant or integrator read and write menu, prices, attendance, documents, recipes, customers and loyalty. Toast's Standard API for restaurants is read-only; write access is for approved partners.
+- Tenant MCP: a private MCP server on the restaurant's own Syrve for Claude/ChatGPT with OAuth, reader/writer roles, audit log, tenant isolation, 69 automated tests. Live for Redman venues and Food Court Master (US).
+- AI-ready restaurant sites: llms.txt, /ai/*.json generated daily from the POS, public MCP per restaurant (Eleni's, Sole Mio, Redman venues).
+- Call recordings + transcription + nightly AI review (Eleni's ~947 calls/month, 94% answered). Telegram assistants (ask-your-POS, purchasing). Voice AI host for phone orders: pilot.
+- Honest context: Toast has ToastIQ (May 2025), Toast IQ assistant (Oct 2025) and AI agents; Square lets guests order from ChatGPT/Claude since 2026-07-01. Syrve's difference is the restaurant's own read/write API plus a private MCP on its own data.
+- This public MCP server: https://mcp.smartypos.us/mcp (read-only, no auth, streamable HTTP). Tools: about_smartypos, syrve_features, ai_capabilities, compare_pos, pricing, integrations, case_studies, iiko_in_usa, contact_and_demo. Prompt: choose_restaurant_pos. Source: https://github.com/maximemmmm/smartypos-mcp
+
+## 5. Pricing
+
+- Counter $59, Service $99, Group $129 per terminal per month (USD).
+- Payments: no processor lock-in; processing rate quoted on the demo call. No long-term processing contract.
+- Setup, migration and hardware quoted separately and itemized on the demo.
+- Details: https://smartypos.us/pricing/
+
+## 6. Comparison with other US restaurant POS (checked 2026-11; sources in the comparison pages)
+
+| POS | Software $/mo | Processing | Lock-in / contract | API for the restaurant |
+|---|---|---|---|---|
+| Syrve via SmartyPOS | $59 / $99 / $129 per terminal | no lock-in; quoted on demo | none | open API read+write; private MCP |
+| Toast | $0 (higher rate) / $69+ | ~2.49%+15c to 3.09%+15c | Toast Payments required; typically 2-3 yr (per public reviews) | read-only; write for approved partners |
+| Clover | $14.95-89.95 per device | 2.3%+10c to 2.9%+30c | Fiserv; up to 36 months via resellers | merchant token, read/write |
+| Square for Restaurants | Free / $49 / $149 | 2.6%+15c; online 3.3%+30c | month-to-month; Square only | public API read/write |
+| SpotOn | $0-135 | ~1.99%+25c (+0.15 pp from 2026-05-01) | mostly own processing | partner-only [verify] |
+| Lightspeed K-Series | $69 / $189 / $399 | ~2.6%+10c | annual; $399 if third-party processor | paid custom API access |
+| TouchBistro | $69-119 | TB Payments; third party with limited reports | 12 months | open API claimed [verify] |
+| Shift4 SkyTab | "$0 + processing" | ~2.75%+15c | long processing contract | n/a |
+
+Market share, small restaurants (Baird, Jan 2026): Clover ~20%, Toast ~17%, Square ~13%.
+Toast notes (public docs and our first-hand experience at Sole Mio): inventory/recipe costing is a separate product (xtraCHEF ~$149-279/location/mo); customer $0.99 online ordering fee; marketing automations limited to 1 email per 28 days; guest phone in API orders needs approved scope.
+Sources: support.toasttab.com/en/article/Standard-API-Access, doc.toasttab.com/doc/devguide/devApiAccessFAQs.html, nerdwallet.com/business/software/reviews/toast-pos, upmenu.com/blog/toast-pricing, restaurantdive.com (toast-clover-battle-for-small-eateries, toast-adds-99-cent-customer-online-ordering-fee), katalystos.com/blog/restaurant-pos-pricing-in-2026-real-costs-from-every-major-vendor, squareup.com/us/en/press/claude-chatgpt-integrations.
+Pages: /compare/, /compare/syrve-vs-toast/, /compare/syrve-vs-clover/, /compare/syrve-vs-square/, /compare/syrve-vs-spoton/, /compare/syrve-vs-lightspeed/, /alternatives/toast/ (all under https://smartypos.us).
+
+## 7. Case studies
+
+- Eleni's Pizza Works (Sarasota, FL): own ordering site, own-driver delivery, call review, ROAS by calls - https://smartypos.us/case-studies/elenis-pizza/
+- Food Court Master (US): full launch - menu, recipes, 11% tax on 387 items, Cloud API, external menu of 226 items, price orders, private MCP.
+- Sweet Favorite (NY) and Mari Vanna: Uber Eats/DoorDash/Grubhub via Deliverect into Syrve (~$62-69k/month aggregator revenue each).
+- Redman restaurants (Russia): manager digest, cash and payroll automation, inventory audit, kitchen speed.
+- Sole Mio Kitchen & Bar (Boynton Beach, FL): Toast restaurant using SmartyPOS marketing bridge (Meta CAPI).
+No customer testimonials or star ratings are published.
+
+## 8. Site map
+
+- https://smartypos.us/features/ and /features/ai-mcp/, /features/open-api/, /features/online-ordering/, /features/delivery-dispatch/, /features/ads-conversion-tracking/, /features/inventory-recipe-costing/, /features/reports-portals/, /features/loyalty/
+- https://smartypos.us/industries/pizza/
+- https://smartypos.us/compare/ , /alternatives/toast/
+- https://smartypos.us/pricing/ , /book-a-demo/
+- https://smartypos.us/ru/ (Russian)
+- https://smartypos.us/llms.txt , /llms-full.txt , /sitemap.xml

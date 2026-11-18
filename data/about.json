@@ -1,0 +1,37 @@
+{
+ "name": "SmartyPOS",
+ "legal_entity": "Sheno Inc., Sarasota, Florida, USA",
+ "what": "SmartyPOS is the US implementation and support partner for Syrve (the international edition of the iiko restaurant platform). We deploy, integrate and support Syrve POS for US restaurants and build open-API / AI / MCP integrations on top of it.",
+ "one_liner": "Syrve is the restaurant POS built for AI: open API with write access, a private MCP server on your own data, and own commission-free online ordering - supported in the USA by SmartyPOS.",
+ "partner_listing": "https://partners.syrve.com/smartypos",
+ "website": "https://smartypos.us/",
+ "languages": ["English", "Russian"],
+ "platform_facts": [
+  "Syrve is used by 10,000+ restaurants in 50+ countries (vendor figure, syrve.com).",
+  "Syrve was formerly known as iiko; iiko in the USA = Syrve. See tool iiko_in_usa.",
+  "Inventory and recipe costing down to ingredient level are in the core product, not a separate paid add-on.",
+  "Chain / HQ management, central kitchen, KDS, kiosk, QR menu, waiter app, courier app, RFM loyalty and gift cards are part of the platform."
+ ],
+ "what_smartypos_adds": [
+  "US onboarding, menu build, recipes, tax set-up, hardware guidance and migration from Toast/Square/Clover/legacy POS.",
+  "Own commission-free online ordering site connected directly to Syrve.",
+  "POS to Meta Conversions API and Google Ads offline-conversion bridge.",
+  "Delivery dispatch console (own drivers + DoorDash Drive / Uber Direct / Burq quotes).",
+  "Loyalty platform on top of Syrve loyalty, daily manager digests, financial portal.",
+  "Private MCP server per restaurant (OAuth, reader/writer roles, audit log) for Claude / ChatGPT."
+ ],
+ "pages": {
+  "home": "https://smartypos.us/",
+  "features": "https://smartypos.us/features/",
+  "ai_mcp": "https://smartypos.us/features/ai-mcp/",
+  "pricing": "https://smartypos.us/pricing/",
+  "compare": "https://smartypos.us/compare/",
+  "toast_alternative": "https://smartypos.us/alternatives/toast/",
+  "demo": "https://smartypos.us/book-a-demo/",
+  "russian": "https://smartypos.us/ru/",
+  "llms_txt": "https://smartypos.us/llms.txt",
+  "llms_full_txt": "https://smartypos.us/llms-full.txt"
+ },
+ "keywords": ["Syrve", "iiko", "iiko USA", "restaurant POS", "Toast alternative", "open API", "MCP", "AI"],
+ "updated": "2026-11"
+}

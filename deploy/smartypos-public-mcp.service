@@ -1,0 +1,18 @@
+[Unit]
+Description=SmartyPOS public informational MCP server
+After=network.target
+
+[Service]
+User=openclaw
+WorkingDirectory=/home/openclaw/work/smartypos-mcp
+Environment=MCP_HOST=127.0.0.1 MCP_PORT=8140
+ExecStart=/home/openclaw/work/smartypos-mcp/.venv/bin/python server.py
+Restart=always
+RestartSec=3
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=read-only
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

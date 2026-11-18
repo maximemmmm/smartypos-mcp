@@ -1,0 +1,16 @@
+{
+ "updated": "2026-11",
+ "cases": [
+  {"name": "Eleni's Pizza Works (Sarasota, FL)", "type": "Pizzeria on Syrve", "url": "https://smartypos.us/case-studies/elenis-pizza/",
+   "facts": ["Own commission-free ordering site order.elenispizzaworks.com live since 2026-11-16; Lighthouse 97/100/100/100.", "Replay test: 180 of 194 historic orders accepted, totals matched to the cent on 142/160 comparable orders.", "Own-driver delivery: 1,781 deliveries May-Nov 2026, median 25 min in transit.", "Call recordings + AI review: ~947 calls/month, 94% answered.", "Google ROAS by calls: Maps Local 5.44x vs Search 0.68x.", "Corporate catering site + B2B CRM live since 2026-11-10."]},
+  {"name": "Food Court Master (US)", "type": "Full Syrve launch", "url": "https://smartypos.us/case-studies/",
+   "facts": ["Menu, recipes, 11% tax on 387 items, Cloud API, external menu (226 items).", "Price-change orders #0001-0013 via API.", "Private tenant MCP for Claude/ChatGPT live."]},
+  {"name": "Sweet Favorite (NY) and Mari Vanna", "type": "Marketplaces via Deliverect", "url": "https://smartypos.us/case-studies/",
+   "facts": ["Uber Eats, DoorDash, Grubhub into Syrve via Deliverect; roughly $62-69k/month aggregator revenue each (SmartyPOS figures).", "Aggregator price markups (e.g. Uber Eats +25%) via Syrve price orders."]},
+  {"name": "Redman restaurants (Bloody Mary, Brisket, Pastrama Mama; Russia)", "type": "Syrve/iiko chain automation", "url": "https://smartypos.us/case-studies/",
+   "facts": ["Daily manager digest, cash report, payroll reconciled to the cent (Brisket 1-15 Nov 2026).", "Inventory discrepancies cut from 2.8M to 1.2M RUB over 6 counts.", "Kitchen speed 15.0 to 12.5 min after chef change.", "Tenant MCP live."]},
+  {"name": "Sole Mio Kitchen & Bar (Boynton Beach, FL)", "type": "Toast restaurant using SmartyPOS marketing tooling", "url": "https://smartypos.us/case-studies/",
+   "facts": ["POS to Meta Conversions API: event match quality 8.93.", "First-hand experience with Toast API limits informs the comparison data."]}
+ ],
+ "note": "No customer testimonials or ratings are published; only operational facts from SmartyPOS deployments."
+}

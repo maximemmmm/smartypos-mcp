@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "us.smartypos/syrve-pos",
+  "title": "SmartyPOS - Syrve (iiko USA) restaurant POS",
+  "description": "Syrve / iiko USA restaurant POS info: features, pricing, Toast comparison, open API, MCP, AI.",
+  "version": "1.0.0",
+  "websiteUrl": "https://smartypos.us/",
+  "repository": {
+    "url": "https://github.com/maximemmmm/smartypos-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.smartypos.us/mcp"
+    }
+  ]
+}

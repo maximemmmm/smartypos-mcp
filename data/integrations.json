@@ -1,0 +1,15 @@
+{
+ "updated": "2026-11",
+ "note": "Only integrations used in production or listed as supported. status=live unless noted.",
+ "groups": {
+  "marketplaces": ["Uber Eats, DoorDash, Grubhub via Deliverect (live at Sweet Favorite NY and Mari Vanna)"],
+  "couriers": ["DoorDash Drive, Uber Direct, Burq quotes in the dispatch console (pilot); own drivers (live)"],
+  "ads_analytics": ["Meta Conversions API", "Google Ads offline conversions and Customer Match", "GA4", "marketing data warehouse"],
+  "payments_wallets": ["Apple Pay on own ordering site", "Third-party processors supported - no lock-in (rate quoted on demo)"],
+  "messaging": ["Twilio SMS (A2P approved)", "Telegram bots", "email receipts"],
+  "ai": ["MCP (Claude, ChatGPT)", "llms.txt and /ai/*.json restaurant sites", "call transcription + AI review"],
+  "accounting_ops": ["QuickBooks and other accounting exports (via Syrve integrations - confirm on demo)"],
+  "api": ["Syrve Resto/Server API (read/write)", "Syrve Cloud API (iikoCloud equivalent)", "webhooks"]
+ },
+ "page": "https://smartypos.us/features/open-api/"
+}

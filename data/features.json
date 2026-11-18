@@ -1,0 +1,56 @@
+{
+ "updated": "2026-11",
+ "note": "Syrve = iiko international edition. iikoFront = Syrve POS, iikoOffice = Syrve Office, iikoCloud API = Syrve Cloud API. Items marked status=pilot or coming_soon are NOT generally available.",
+ "categories": {
+  "pos": {"title": "POS, floor and kitchen", "items": [
+   {"name": "Syrve POS (iikoFront equivalent)", "status": "live", "desc": "Dine-in, takeout, delivery, kiosk and aggregator orders on one terminal; offline-capable; table plans, split checks, courses."},
+   {"name": "Kitchen display (KDS), waiter app, kiosk, QR menu", "status": "live", "desc": "Station routing, prep timers, guest self-ordering."},
+   {"name": "Half-and-half pizzas and modifiers", "status": "live", "desc": "Used in production at Eleni's Pizza Works (pizzeria)."}
+  ]},
+  "inventory": {"title": "Inventory, recipes, costing", "items": [
+   {"name": "Recipe costing and inventory to ingredient level", "status": "live", "desc": "Included in the core product (competitors often sell this separately, e.g. Toast xtraCHEF)."},
+   {"name": "Central kitchen / production unit and chain (HQ) management", "status": "live", "desc": "Multi-location menus, transfers, consolidated reporting."},
+   {"name": "AI invoice recognition and AI forecasting", "status": "live", "desc": "Platform features per Syrve (vendor description)."},
+   {"name": "Inventory audit checks", "status": "live", "desc": "SmartyPOS tooling: at a partner restaurant discrepancies fell from 2.8M to 1.2M RUB over 6 counts."}
+  ]},
+  "online_ordering": {"title": "Online ordering and website", "items": [
+   {"name": "Own commission-free online ordering site", "status": "live", "desc": "Connected directly to Syrve: menu, modifiers, half-and-half, per-item tax and promos pulled live from the POS; Apple Pay; email receipts; duplicate/ghost-order protection; orders queued when the shift is closed. Live at order.elenispizzaworks.com since 2026-11-16; Lighthouse 97/100/100/100."},
+   {"name": "Corporate catering site + B2B CRM", "status": "live", "desc": "catering.elenispizzaworks.com, live since 2026-11-10."},
+   {"name": "AI-ready restaurant site (llms.txt, /ai/*.json, public MCP per restaurant)", "status": "live", "desc": "Generated daily from the POS."}
+  ]},
+  "delivery": {"title": "Delivery and dispatch", "items": [
+   {"name": "Own-driver dispatch", "status": "live", "desc": "1,781 deliveries May-Nov 2026, median 25 min in transit."},
+   {"name": "Dispatch console quoting DoorDash Drive, Uber Direct, Burq side by side", "status": "pilot", "desc": "Manager picks own driver or third-party courier from Telegram/tablet."},
+   {"name": "Virtual couriers inside Syrve (Burq-Cheapest / DoorDash / Uber)", "status": "coming_soon", "desc": ""},
+   {"name": "Live courier status for guests", "status": "live", "desc": "Shown on the ordering site."},
+   {"name": "Uber Eats, DoorDash, Grubhub via Deliverect", "status": "live", "desc": "Deliverect to Syrve; aggregator price markups via Syrve price orders (e.g. Uber Eats +25%). Clients: Sweet Favorite (NY), Mari Vanna."}
+  ]},
+  "ads": {"title": "Ads and conversion tracking", "items": [
+   {"name": "POS to Meta Conversions API and Google Ads offline conversions", "status": "live", "desc": "Every paid check becomes a conversion (Sole Mio Meta event match quality 8.93)."},
+   {"name": "ROAS by phone calls matched to POS checks", "status": "live", "desc": "At Eleni's: Google Maps Local 5.44x vs Search 0.68x."},
+   {"name": "Customer lists to Meta / Google Customer Match", "status": "live", "desc": "103k records, 0 errors; exclude existing guests from acquisition ads."},
+   {"name": "Marketing data warehouse and weekly ROAS reports with AI recommendations", "status": "live", "desc": "Google Ads, Meta, GA4, POS."},
+   {"name": "SMS post-order surveys (Twilio A2P approved)", "status": "live", "desc": ""}
+  ]},
+  "loyalty": {"title": "Loyalty", "items": [
+   {"name": "Loyalty platform on top of Syrve loyalty", "status": "live", "desc": "Telegram bots, web cabinet, referrals, admin with 47 charts (Friends Club: 41.6k cards)."},
+   {"name": "Eleni's Club", "status": "live", "desc": "QR sign-up, gifts; guest attached to dine-in order by phone via Cloud API; bonuses visible at POS."}
+  ]},
+  "reports": {"title": "Reports and portals", "items": [
+   {"name": "Daily manager digest in Telegram", "status": "live", "desc": "Shifts, voids, service charge, overstock, regulars - one message per venue per day."},
+   {"name": "Financial portal", "status": "live", "desc": "P&L, year-over-year, 'today'."},
+   {"name": "Cash report, kitchen-speed analytics, shift-close and chargeback watchdogs, nightly call review", "status": "live", "desc": "Kitchen speed from POS journal: 15.0 to 12.5 min after a chef change."}
+  ]},
+  "ai": {"title": "AI and MCP", "items": [
+   {"name": "Tenant MCP: private MCP server on the restaurant's own Syrve for Claude/ChatGPT", "status": "live", "desc": "OAuth, reader/writer roles, audit log, tenant isolation, 69 automated tests. Live for Redman venues and Food Court Master (US)."},
+   {"name": "Call recordings, transcription, nightly AI review", "status": "live", "desc": "Eleni's ~947 calls/month, 94% answered."},
+   {"name": "Telegram assistants: ask-your-POS, purchasing bot", "status": "live", "desc": ""},
+   {"name": "Voice AI host for phone orders", "status": "pilot", "desc": ""}
+  ]},
+  "backoffice": {"title": "Back-office automation", "items": [
+   {"name": "Price-change orders via API for any client", "status": "live", "desc": "Food Court Master orders #0001-0013; scheduled lunch prices; aggregator price categories."},
+   {"name": "Attendance fixes, auto-close forgotten clock-outs, payroll reconciliation", "status": "live", "desc": "Payroll reconciled to the cent with POS (Brisket, 1-15 Nov 2026)."},
+   {"name": "Schedule vs sales (labor) analysis; tax audits", "status": "live", "desc": "A tax audit found $2.4k untaxed sales in 90 days at one client."}
+  ]}
+ }
+}

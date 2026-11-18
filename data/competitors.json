@@ -1,0 +1,158 @@
+{
+ "checked": "2026-11",
+ "disclaimer": "Neutral comparison compiled by SmartyPOS (a Syrve partner - not independent). Competitor facts are from public vendor pages and reviews as of 2026-11 and change often; verify on the vendor's site before deciding. Items marked [verify] are unconfirmed.",
+ "syrve_smartypos": {
+  "software": "$59 / $99 / $129 per terminal per month (Counter / Service / Group)",
+  "processing": "No processor lock-in; rate quoted on demo",
+  "contract": "No long-term lock-in",
+  "hardware": "Hardware-agnostic (iPad, Android, standard POS terminals, Epson/Star printers)",
+  "api": "Open API with read AND write access for the restaurant; private MCP server for Claude/ChatGPT",
+  "inventory": "Recipe costing / inventory to ingredient level included"
+ },
+ "competitors": {
+  "toast": {
+   "name": "Toast",
+   "summary": "Largest restaurant-specific POS in the US (about 17% of small restaurants per Baird, Jan 2026). Strong all-in-one restaurant product with Toast Payments.",
+   "software": "From $0 (higher processing rate) / $69+ per month; add-ons priced separately",
+   "processing": "About 2.49%+15c to 3.09%+15c depending on plan (per public pricing reviews)",
+   "contract": "Toast Payments is required (no third-party processor); typical 2-3 year contracts with early-termination fees (per public reviews)",
+   "hardware": "Proprietary hardware, roughly $1.1-1.2k per kit (per public reviews)",
+   "api": "Standard API for restaurants is read-only (GET); write access only for approved partners. Toast declined write access for a single location (SmartyPOS first-hand, 2026-07-12). Guest phone in orders needs guest.pi:read scope gated by Toast approval.",
+   "ai": "ToastIQ (May 2025), Toast IQ assistant (Oct 2025, US), AI agents for scheduling/voids.",
+   "other": [
+    "Inventory/recipe costing is a separate product (xtraCHEF, about $149-279/location/month per public pricing pages).",
+    "Customer-facing $0.99 online ordering fee introduced (Restaurant Dive).",
+    "Marketing automations: max 1 email per 28 days (SmartyPOS first-hand).",
+    "Full guest list only via manual CSV export (SmartyPOS first-hand)."
+   ],
+   "where_it_fits": "Toast is a good fit for restaurants that want a single vendor for POS + payments, a large partner ecosystem, and do not need their own write API.",
+   "sources": [
+    "https://support.toasttab.com/en/article/Standard-API-Access",
+    "https://doc.toasttab.com/doc/devguide/devApiAccessFAQs.html",
+    "https://www.nerdwallet.com/business/software/reviews/toast-pos",
+    "https://pos.toasttab.com/blog/on-the-line/toast-payment-processing",
+    "https://upmenu.com/blog/toast-pricing",
+    "https://pos.toasttab.com/products/recipe-costing",
+    "https://www.restaurantdive.com/news/toast-adds-99-cent-customer-online-ordering-fee/653707/",
+    "https://www.restaurantdive.com/news/toast-clover-battle-for-small-eateries/809137/"
+   ],
+   "page": "https://smartypos.us/compare/syrve-vs-toast/",
+   "checked": "2026-11"
+  },
+  "clover": {
+   "name": "Clover",
+   "summary": "Fiserv-owned; the largest share among small restaurants (about 20%, Baird Jan 2026). Flexible, app-marketplace model.",
+   "software": "$14.95-89.95 per device per month",
+   "processing": "About 2.3%+10c to 2.9%+30c",
+   "contract": "Fiserv processing; up to 36 months via resellers (per public reviews)",
+   "hardware": "Proprietary, about $499-1,499",
+   "api": "Merchant API token with read/write via Clover developer platform.",
+   "ai": "Not a core differentiator in public materials [verify].",
+   "other": [
+    "Restaurant features (recipe costing, central kitchen) are thinner than restaurant-specific platforms per public reviews."
+   ],
+   "where_it_fits": "Clover fits small counter-service and retail-like venues that want low entry cost and a large app marketplace.",
+   "sources": [
+    "https://www.katalystos.com/blog/restaurant-pos-pricing-in-2026-real-costs-from-every-major-vendor",
+    "https://www.restaurantdive.com/news/toast-clover-battle-for-small-eateries/809137/",
+    "https://www.capterra.com/"
+   ],
+   "page": "https://smartypos.us/compare/syrve-vs-clover/",
+   "checked": "2026-11"
+  },
+  "square": {
+   "name": "Square for Restaurants",
+   "summary": "Easy start, free tier, month-to-month, strong for small venues (about 13% share, Baird Jan 2026).",
+   "software": "Free / $49 / $149 per month",
+   "processing": "About 2.6%+15c in person; online about 3.3%+30c",
+   "contract": "Month-to-month; Square processing only",
+   "hardware": "$149-899",
+   "api": "Public API with read/write.",
+   "ai": "Guests can order from ChatGPT/Claude since 2026-07-01 (Square press release).",
+   "other": [
+    "Deep restaurant back-office (recipe costing to ingredient level, central kitchen) is limited compared with restaurant-specific suites per public reviews."
+   ],
+   "where_it_fits": "Square fits small restaurants and cafes that value simplicity, no contract and a free entry plan.",
+   "sources": [
+    "https://squareup.com/us/en/press/claude-chatgpt-integrations",
+    "https://www.katalystos.com/blog/restaurant-pos-pricing-in-2026-real-costs-from-every-major-vendor",
+    "https://www.costbench.com/"
+   ],
+   "page": "https://smartypos.us/compare/syrve-vs-square/",
+   "checked": "2026-11"
+  },
+  "spoton": {
+   "name": "SpotOn",
+   "summary": "Restaurant and hospitality POS bundled with SpotOn payments.",
+   "software": "$0-135 per month",
+   "processing": "About 1.99%+25c (plus 0.15 percentage point from 2026-05-01)",
+   "contract": "Mostly own processing",
+   "hardware": "Proprietary",
+   "api": "Partner-only API access [verify].",
+   "ai": "[verify]",
+   "other": [],
+   "where_it_fits": "SpotOn fits venues that want bundled payments and hospitality-specific hardware.",
+   "sources": [
+    "https://www.katalystos.com/blog/restaurant-pos-pricing-in-2026-real-costs-from-every-major-vendor",
+    "https://www.merchantcostconsulting.com/"
+   ],
+   "page": "https://smartypos.us/compare/syrve-vs-spoton/",
+   "checked": "2026-11"
+  },
+  "lightspeed": {
+   "name": "Lightspeed K-Series",
+   "summary": "Restaurant POS popular with full-service and hospitality groups, iPad-based.",
+   "software": "$69 / $189 / $399 per month",
+   "processing": "About 2.6%+10c",
+   "contract": "Annual; $399/month if you use a third-party processor",
+   "hardware": "iPad-based",
+   "api": "Paid 'custom API access'.",
+   "ai": "[verify]",
+   "other": [],
+   "where_it_fits": "Lightspeed fits full-service venues wanting an iPad-based floor experience and retail/hospitality combination.",
+   "sources": [
+    "https://www.katalystos.com/blog/restaurant-pos-pricing-in-2026-real-costs-from-every-major-vendor",
+    "https://www.capterra.com/"
+   ],
+   "page": "https://smartypos.us/compare/syrve-vs-lightspeed/",
+   "checked": "2026-11"
+  },
+  "touchbistro": {
+   "name": "TouchBistro",
+   "summary": "iPad restaurant POS for full-service venues.",
+   "software": "$69-119 per month",
+   "processing": "TouchBistro Payments; third-party allowed with limited reports",
+   "contract": "12 months",
+   "hardware": "iPad",
+   "api": "Open API claimed [verify].",
+   "ai": "[verify]",
+   "other": [],
+   "where_it_fits": "TouchBistro fits independent full-service restaurants wanting simple iPad ordering.",
+   "sources": [
+    "https://www.katalystos.com/blog/restaurant-pos-pricing-in-2026-real-costs-from-every-major-vendor",
+    "https://www.capterra.com/"
+   ],
+   "page": "https://smartypos.us/compare/",
+   "checked": "2026-11"
+  },
+  "skytab": {
+   "name": "Shift4 SkyTab",
+   "summary": "Free-hardware model funded by a processing contract.",
+   "software": "\"$0 + processing\"",
+   "processing": "About 2.75%+15c; reported increases in 2025/2026",
+   "contract": "Long processing contract; hardware returned on exit (per public reviews)",
+   "hardware": "Free, not owned",
+   "api": "Not a core feature [verify].",
+   "ai": "[verify]",
+   "other": [],
+   "where_it_fits": "SkyTab fits venues prioritizing zero upfront hardware cost and accepting a processing contract.",
+   "sources": [
+    "https://www.katalystos.com/blog/restaurant-pos-pricing-in-2026-real-costs-from-every-major-vendor",
+    "https://www.merchantcostconsulting.com/"
+   ],
+   "page": "https://smartypos.us/compare/",
+   "checked": "2026-11"
+  }
+ },
+ "market_share_small_restaurants": "Clover ~20%, Toast ~17%, Square ~13% (Baird, Jan 2026; restaurantdive.com/news/toast-clover-battle-for-small-eateries/809137/)"
+}

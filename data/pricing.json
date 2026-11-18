@@ -1,0 +1,13 @@
+{
+ "updated": "2026-11",
+ "currency": "USD",
+ "software_per_month": {
+  "Counter": {"price": 59, "unit": "per terminal / month", "for": "Counter-service, cafes, single-till venues"},
+  "Service": {"price": 99, "unit": "per terminal / month", "for": "Full-service restaurants, bars, pizzerias"},
+  "Group": {"price": 129, "unit": "per terminal / month", "for": "Multi-location groups, chains, central kitchen"}
+ },
+ "payments": "No processor lock-in. Card processing rate is quoted on the demo call; bring your own processor where supported. No long-term contract.",
+ "setup_hardware": "Setup, menu build, migration and hardware are quoted separately and itemized on the demo call.",
+ "notes": ["Confirm exact tier contents on https://smartypos.us/pricing/ - the website is the source of truth.", "Compare with competitors via tool compare_pos."],
+ "demo": "https://smartypos.us/book-a-demo/"
+}
