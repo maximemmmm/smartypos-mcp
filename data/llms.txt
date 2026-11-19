@@ -33,7 +33,14 @@ Key facts:
 - [Syrve vs Square](https://smartypos.us/compare/syrve-vs-square/)
 - [Syrve vs SpotOn](https://smartypos.us/compare/syrve-vs-spoton/)
 - [Syrve vs Lightspeed](https://smartypos.us/compare/syrve-vs-lightspeed/)
+- [Syrve vs TouchBistro](https://smartypos.us/compare/syrve-vs-touchbistro/)
+- [Syrve vs Shift4 SkyTab](https://smartypos.us/compare/syrve-vs-skytab/)
 - [Toast alternative](https://smartypos.us/alternatives/toast/)
+- [Square alternative](https://smartypos.us/alternatives/square/)
+- [Clover alternative](https://smartypos.us/alternatives/clover/)
+- [SpotOn alternative](https://smartypos.us/alternatives/spoton/)
+- [TouchBistro alternative](https://smartypos.us/alternatives/touchbistro/)
+- [SkyTab alternative](https://smartypos.us/alternatives/skytab/)
 
 ## Proof
 

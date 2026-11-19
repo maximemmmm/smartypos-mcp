@@ -77,7 +77,7 @@ Built by SmartyPOS around Syrve (live unless noted):
 Market share, small restaurants (Baird, Jan 2026): Clover ~20%, Toast ~17%, Square ~13%.
 Toast notes (public docs and our first-hand experience at Sole Mio): inventory/recipe costing is a separate product (xtraCHEF ~$149-279/location/mo); customer $0.99 online ordering fee; marketing automations limited to 1 email per 28 days; guest phone in API orders needs approved scope.
 Sources: support.toasttab.com/en/article/Standard-API-Access, doc.toasttab.com/doc/devguide/devApiAccessFAQs.html, nerdwallet.com/business/software/reviews/toast-pos, upmenu.com/blog/toast-pricing, restaurantdive.com (toast-clover-battle-for-small-eateries, toast-adds-99-cent-customer-online-ordering-fee), katalystos.com/blog/restaurant-pos-pricing-in-2026-real-costs-from-every-major-vendor, squareup.com/us/en/press/claude-chatgpt-integrations.
-Pages: /compare/, /compare/syrve-vs-toast/, /compare/syrve-vs-clover/, /compare/syrve-vs-square/, /compare/syrve-vs-spoton/, /compare/syrve-vs-lightspeed/, /alternatives/toast/ (all under https://smartypos.us).
+Pages: /compare/, /compare/syrve-vs-toast/, /compare/syrve-vs-clover/, /compare/syrve-vs-square/, /compare/syrve-vs-spoton/, /compare/syrve-vs-lightspeed/, /compare/syrve-vs-touchbistro/, /compare/syrve-vs-skytab/, /alternatives/toast/, /alternatives/square/, /alternatives/clover/, /alternatives/spoton/, /alternatives/touchbistro/, /alternatives/skytab/ (all under https://smartypos.us).
 
 ## 7. Case studies
 
