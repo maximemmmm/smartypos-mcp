@@ -1,0 +1,39 @@
+{
+ "updated": "2026-11-19",
+ "note": "Guides, tools and FAQ highlights from smartypos.us. SmartyPOS is a Syrve partner, not an independent reviewer. The Toast items are allegations in a complaint, not a court ruling.",
+ "toast_lawsuit": {
+  "summary": "On 2026-10-29 the FTC (vote 2-0) and California (through the Los Angeles County Counsel and San Francisco City Attorney), with the attorneys general of Colorado, Florida, Illinois, Iowa, Nebraska, Oklahoma and Utah, filed a complaint against Toast, Inc. in the U.S. District Court for the Northern District of California.",
+  "allegations_according_to_the_complaint": [
+   "an undisclosed early-termination fee of $150 per remaining month of the contract (one cited example: $5,318.87)",
+   "hardware advertised as $0 that customers allegedly must return or pay full retail value for if they do not start processing within 120 days",
+   "'24/7/365' support that customers allegedly cannot reach",
+   "$85 a month for payment processing charged to temporarily closed restaurants",
+   "an undisclosed $0.99 fee on certain online orders over $10 from September 2021 to late July 2023",
+   "Toast Capital loans allegedly treated as defaulted (full balance due) when a restaurant cancels or switches providers",
+   "cancellation requiring 30 days' written notice, with notices allegedly unanswered"
+  ],
+  "status": "Allegations only. Toast denies them. No court ruling. Not legal advice.",
+  "sources": [
+   "https://www.ftc.gov/news-events/news/press-releases/2026/10/ftc-states-take-action-against-toast-inc-over-hidden-unauthorized-fees-deceptive-subscription",
+   "https://www.bostonglobe.com/2026/10/30/business/toast-sued-by-federal-trade-commission/",
+   "https://www.dlapiper.com/en/insights/publications/2026/11/ftc-and-seven-states-sue-toast",
+   "https://www.qsrweb.com/news/ftc-states-sue-toast-over-alleged-hidden-fees-subscription-traps/"
+  ]
+ },
+ "pages": {
+  "guides": ["https://smartypos.us/guides/toast-lawsuit-what-restaurants-should-know/", "https://smartypos.us/guides/how-to-cancel-toast-contract/", "https://smartypos.us/pricing/how-much-does-a-restaurant-pos-cost/", "https://smartypos.us/switch-pos/"],
+  "tools": ["https://smartypos.us/tools/pos-cost-calculator/", "https://smartypos.us/tools/food-cost-calculator/", "https://smartypos.us/tools/menu-price-calculator/"],
+  "reference": ["https://smartypos.us/faq/", "https://smartypos.us/compare/features/", "https://smartypos.us/integrations/", "https://smartypos.us/services/", "https://smartypos.us/trust/"],
+  "features": ["https://smartypos.us/features/ai-purchasing/", "https://smartypos.us/features/forecasting/", "https://smartypos.us/features/central-kitchen/", "https://smartypos.us/features/call-center-delivery/"],
+  "industries_and_locations": ["https://smartypos.us/industries/pizza/", "https://smartypos.us/industries/bakery/", "https://smartypos.us/industries/banquet-halls/", "https://smartypos.us/locations/sarasota/", "https://smartypos.us/locations/south-florida/", "https://smartypos.us/locations/new-york/"],
+  "russian": "Every page has a Russian version under https://smartypos.us/ru/ ; Russian-speaking restaurant owners of any cuisine are a core audience."
+ },
+ "migration_from_toast": "Fast, largely automated: read-only Toast Standard API credentials the restaurant can generate (RMS Essentials and higher) plus Toast exports: menu, modifiers, prices, dining options, discounts, employees, sales history; guest list from the Guestbook export with consent. Manual or not possible: recipes and inventory (not in Toast POS data), some gift card and loyalty balances, card-on-file tokens. Typically days, not weeks.",
+ "integration_labels": "Native (official Syrve connector or module, some separate licenses), Via Deliverect, Via SmartyPOS (our build), On request. No official Syrve connector is claimed for DoorDash or Grubhub direct, 7shifts, Restaurant365, MarginEdge, OpenTable or Resy.",
+ "faq_highlights": [
+  {"q": "Can I use my own card processor with Syrve through SmartyPOS?", "a": "The software is not tied to a processor. We quote rates on the demo and confirm terminal compatibility for the US before you buy."},
+  {"q": "What does SmartyPOS cost?", "a": "Counter $59, Service $99, Group $129 per month. Card processing is separate and quoted on the demo."},
+  {"q": "Is there Russian-language support?", "a": "Yes. Onboarding, training and support are in English and Russian."},
+  {"q": "Where is Syrve weaker than other POS systems?", "a": "No single-vendor integrated card payment in the US, no business loans, no promised 24/7 phone support, and no guest ordering through ChatGPT or Claude (Square announced that in July 2026)."}
+ ]
+}

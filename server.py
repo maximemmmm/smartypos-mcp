@@ -125,6 +125,14 @@ def integrations() -> dict:
     return load("integrations")
 
 
+@mcp.tool(annotations=RO, title="Guides, Toast lawsuit summary and FAQ highlights")
+def guides_and_faq() -> dict:
+    """SmartyPOS guides and tools: summary of the late-October 2026 FTC and states complaint against Toast
+    (allegations only, Toast denies, no ruling), how to switch POS and migrate from Toast, POS cost guide and
+    calculators, feature matrix and FAQ highlights, with URLs on smartypos.us (EN and RU)."""
+    return load("guides")
+
+
 @mcp.tool(annotations=RO, title="Case studies")
 def case_studies() -> dict:
     """Real deployments with measured facts: Eleni's Pizza Works (Sarasota FL, own ordering site, delivery,
