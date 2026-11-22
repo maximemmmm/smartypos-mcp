@@ -6,7 +6,7 @@ Updated at every milestone. Newest entries on top in the log. Plain language fir
 
 Repo: github.com/maximemmmm/smartypos-mcp - default branch `main`. Runs on the VPS in `/home/openclaw/work/smartypos-mcp`.
 
-## What is live where (as of 2026-11-21)
+## What is live where (as of 2026-11-22)
 
 _Generated automatically by `status-sync` on the VPS (daily 06:40 ET). Do not edit this table by hand - add milestones with `status-log`._
 
@@ -15,7 +15,6 @@ _Generated automatically by `status-sync` on the VPS (daily 06:40 ET). Do not ed
 | server checkout `/home/openclaw/work/smartypos-mcp` | working copy running in production on this VPS | `07fe17e` on `main` | last commit 2026-11-19 |
 | systemd service `smartypos-public-mcp.service` | SmartyPOS public informational MCP server | `07fe17e` | service active (running) since 2026-11-20 |
 | nginx `mcp.smartypos.us` | reverse proxy to this repo's service | `07fe17e` | https; public domain |
-| WARNING: unpushed commits | 1 commit(s) on `main` not on GitHub | `07fe17e` | push to origin |
 
 ## Milestone log
 
