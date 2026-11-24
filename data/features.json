@@ -42,14 +42,14 @@
    {"name": "Cash report, kitchen-speed analytics, shift-close and chargeback watchdogs, nightly call review", "status": "live", "desc": "Kitchen speed from POS journal: 15.0 to 12.5 min after a chef change."}
   ]},
   "ai": {"title": "AI and MCP", "items": [
-   {"name": "Tenant MCP: private MCP server on the restaurant's own Syrve for Claude/ChatGPT", "status": "live", "desc": "OAuth, reader/writer roles, audit log, tenant isolation, 69 automated tests. Live for Redman venues and a Los Angeles food court (US)."},
+   {"name": "Tenant MCP: private MCP server on the restaurant's own Syrve for Claude/ChatGPT", "status": "live", "desc": "OAuth, reader/writer roles, audit log, tenant isolation, 69 automated tests. Live for a Russian restaurant group (3 venues) and a Los Angeles food court (US)."},
    {"name": "Call recordings, transcription, nightly AI review", "status": "live", "desc": "~947 calls/month at our pizzeria, 94% answered."},
    {"name": "Telegram assistants: ask-your-POS, purchasing bot", "status": "live", "desc": ""},
    {"name": "Voice AI host for phone orders", "status": "pilot", "desc": ""}
   ]},
   "backoffice": {"title": "Back-office automation", "items": [
    {"name": "Price-change orders via API for any client", "status": "live", "desc": "A Los Angeles food court: orders #0001-0013; scheduled lunch prices; aggregator price categories."},
-   {"name": "Attendance fixes, auto-close forgotten clock-outs, payroll reconciliation", "status": "live", "desc": "Payroll reconciled to the cent with POS (Brisket, 1-15 Nov 2026)."},
+   {"name": "Attendance fixes, auto-close forgotten clock-outs, payroll reconciliation", "status": "live", "desc": "Payroll reconciled to the cent with POS (a barbecue restaurant, 1-15 Nov 2026)."},
    {"name": "Schedule vs sales (labor) analysis; tax audits", "status": "live", "desc": "A tax audit found $2.4k untaxed sales in 90 days at one client."}
   ]}
  }

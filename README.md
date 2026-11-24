@@ -16,7 +16,7 @@ Public, read-only, no-auth [MCP](https://modelcontextprotocol.io) server that le
 | `compare_pos(competitor)` | toast, clover, square, spoton, lightspeed, touchbistro, skytab - sourced, dated 2026-11 |
 | `pricing` | Counter $59 / Service $99 / Group $129 per month; no processor lock-in |
 | `integrations` | Marketplaces, couriers, Meta CAPI, Google Ads, Twilio, MCP, open API |
-| `case_studies` | anonymized cases by concept, city and state (pizzeria, food court, restaurants in New York and Florida), Redman |
+| `case_studies` | anonymized cases by concept, city and state (pizzeria, food court, restaurants in New York and Florida), a Russian restaurant group |
 | `iiko_in_usa` | iiko to Syrve name mapping and FAQ |
 | `contact_and_demo` | Demo link and contacts |
 

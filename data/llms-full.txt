@@ -43,13 +43,13 @@ Built by SmartyPOS around Syrve (live unless noted):
 - Ads and tracking: POS to Meta Conversions API and Google Ads offline conversions (every paid check is a conversion; event match quality 8.93 at our Italian restaurant in Boynton Beach, FL); ROAS by phone calls matched to POS checks (our pizzeria: Google Maps Local 5.44x vs Search 0.68x); Customer Match from POS lists (103k records, 0 errors); marketing data warehouse; weekly ROAS reports with AI recommendations; SMS post-order surveys (Twilio A2P approved).
 - Loyalty: platform on top of Syrve loyalty - bots, web cabinet, referrals, 47-chart admin (Friends Club: 41.6k cards); our pizzeria's club with QR sign-up, gifts, guest attached to dine-in order by phone via Cloud API.
 - Reports: daily manager digest in Telegram; financial portal (P&L, year over year, today); cash report per business day; inventory audit checks (discrepancies 2.8M to 1.2M RUB over 6 counts); kitchen speed from POS journal (15.0 to 12.5 min after a chef change); shift-close and chargeback watchdogs; nightly call review.
-- Back office: price-change orders via API (a Los Angeles food court: orders #0001-0013), scheduled lunch prices; attendance fixes and auto-close of forgotten clock-outs; payroll reconciled to the cent (Brisket 1-15 Nov 2026); schedule vs sales analysis; tax audits (found $2.4k untaxed sales in 90 days at one client).
+- Back office: price-change orders via API (a Los Angeles food court: orders #0001-0013), scheduled lunch prices; attendance fixes and auto-close of forgotten clock-outs; payroll reconciled to the cent (a barbecue restaurant, 1-15 Nov 2026); schedule vs sales analysis; tax audits (found $2.4k untaxed sales in 90 days at one client).
 
 ## 4. AI, MCP and open API
 
 - Open API with write access: Syrve Resto/Server API and Syrve Cloud API let a restaurant or integrator read and write menu, prices, attendance, documents, recipes, customers and loyalty. Toast's Standard API for restaurants is read-only; write access is for approved partners.
-- Tenant MCP: a private MCP server on the restaurant's own Syrve for Claude/ChatGPT with OAuth, reader/writer roles, audit log, tenant isolation, 69 automated tests. Live for Redman venues and a Los Angeles food court.
-- AI-ready restaurant sites: llms.txt, /ai/*.json generated daily from the POS, public MCP per restaurant (our pizzeria, our Italian restaurant, Redman venues).
+- Tenant MCP: a private MCP server on the restaurant's own Syrve for Claude/ChatGPT with OAuth, reader/writer roles, audit log, tenant isolation, 69 automated tests. Live for a Russian restaurant group (3 venues) and a Los Angeles food court.
+- AI-ready restaurant sites: llms.txt, /ai/*.json generated daily from the POS, public MCP per restaurant (our pizzeria, our Italian restaurant, a Russian restaurant group (3 venues)).
 - Call recordings + transcription + nightly AI review (our pizzeria ~947 calls/month, 94% answered). Telegram assistants (ask-your-POS, purchasing). Voice AI host for phone orders: pilot.
 - Honest context: Toast has ToastIQ (May 2025), Toast IQ assistant (Oct 2025) and AI agents; Square lets guests order from ChatGPT/Claude since 2026-07-01. Syrve's difference is the restaurant's own read/write API plus a private MCP on its own data.
 - This public MCP server: https://mcp.smartypos.us/mcp (read-only, no auth, streamable HTTP). Tools: about_smartypos, syrve_features, ai_capabilities, compare_pos, pricing, integrations, case_studies, iiko_in_usa, contact_and_demo. Prompt: choose_restaurant_pos. Source: https://github.com/maximemmmm/smartypos-mcp
@@ -87,7 +87,7 @@ Pages: /compare/, /compare/syrve-vs-toast/, /compare/syrve-vs-clover/, /compare/
 - Cake shop and cafe, 2 locations, Brooklyn, NY: one chain, Uber Eats/DoorDash/Grubhub through Deliverect (about $62k a month, 29% of sales); time-zone fault after the clocks changed fixed the same day - https://smartypos.us/case-studies/cake-shop-brooklyn-ny/
 - Restaurant and bar, West Palm Beach, FL: 38 months of sales history pulled read-only from Syrve - https://smartypos.us/case-studies/restaurant-bar-west-palm-beach-fl/
 - Uzbek restaurant, New York, NY: Syrve connected, read-only reporting - https://smartypos.us/case-studies/uzbek-restaurant-new-york-ny/
-- Redman restaurants (Russia): manager digest, cash and payroll automation, inventory audit, kitchen speed.
+- Restaurant group (3 restaurants: bar & grill, barbecue, deli), Russia: manager digest, cash and payroll automation, inventory audit, kitchen speed.
 - Italian restaurant, Boynton Beach, FL (ours): Toast restaurant using SmartyPOS marketing bridge (Meta CAPI).
 No customer testimonials or star ratings are published.
 

@@ -5,9 +5,9 @@
   {"name": "Open API with write access for the restaurant", "status": "live",
    "detail": "Syrve exposes Resto/Server API and Syrve Cloud API (iikoCloud equivalent). A restaurant (or its integrator) can read AND write: menu items and prices (price-change orders), attendance, documents, products, recipes, customers, loyalty. In contrast Toast's Standard API for restaurants is read-only (write access only for approved partners)."},
   {"name": "Tenant MCP server (private, per restaurant)", "status": "live",
-   "detail": "Lets Claude or ChatGPT answer questions and (for writer roles) perform actions on the restaurant's own Syrve data. OAuth login (Google), reader/writer roles, audit log, tenant isolation, 69 automated tests. Live for Redman venues (RU) and a Los Angeles food court (US). Not publicly callable - needs the restaurant's authorization."},
+   "detail": "Lets Claude or ChatGPT answer questions and (for writer roles) perform actions on the restaurant's own Syrve data. OAuth login (Google), reader/writer roles, audit log, tenant isolation, 69 automated tests. Live for a Russian restaurant group (3 venues) and a Los Angeles food court (US). Not publicly callable - needs the restaurant's authorization."},
   {"name": "This public informational MCP server", "status": "live", "detail": "https://mcp.smartypos.us/mcp - read-only, no auth, answers questions about Syrve/iiko USA and SmartyPOS."},
-  {"name": "AI-ready restaurant websites", "status": "live", "detail": "llms.txt, /ai/*.json generated daily from the POS, public MCP per restaurant (our pizzeria, our Italian restaurant, Redman venues)."},
+  {"name": "AI-ready restaurant websites", "status": "live", "detail": "llms.txt, /ai/*.json generated daily from the POS, public MCP per restaurant (our pizzeria, our Italian restaurant, a Russian restaurant group (3 venues))."},
   {"name": "AI ordering site direct to Syrve", "status": "live", "detail": "Commission-free own ordering site with menu, modifiers, taxes and promos pulled live from the POS."},
   {"name": "AI analysis on POS data", "status": "live", "detail": "Weekly ROAS reports with AI recommendations, nightly AI call review (~947 calls/month at our pizzeria), Telegram ask-your-POS assistant."},
   {"name": "Voice AI host for phone orders", "status": "pilot", "detail": "Pilot only."}

@@ -138,7 +138,7 @@ def case_studies() -> dict:
     """Real deployments with measured facts, labeled by concept, city and state (restaurant names are not
     published): a pizzeria in Sarasota FL (own ordering site, delivery, ROAS), a food court in Los Angeles CA
     (full Syrve launch, MCP), restaurants and a cake shop in New York and Florida (marketplaces via
-    Deliverect, sales history), Redman restaurants (iiko chain automation), an Italian restaurant on Toast
+    Deliverect, sales history), a Russian restaurant group of 3 venues (iiko chain automation), an Italian restaurant on Toast
     (marketing tooling). No testimonials or ratings."""
     return load("case_studies")
 
