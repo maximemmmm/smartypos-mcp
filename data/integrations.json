@@ -2,7 +2,7 @@
  "updated": "2026-11",
  "note": "Only integrations used in production or listed as supported. status=live unless noted.",
  "groups": {
-  "marketplaces": ["Uber Eats, DoorDash, Grubhub via Deliverect (live at Sweet Favorite NY and Mari Vanna)"],
+  "marketplaces": ["Uber Eats, DoorDash, Grubhub via Deliverect (live at a Brooklyn cake shop and a Russian restaurant in New York)"],
   "couriers": ["DoorDash Drive, Uber Direct, Burq quotes in the dispatch console (pilot); own drivers (live)"],
   "ads_analytics": ["Meta Conversions API", "Google Ads offline conversions and Customer Match", "GA4", "marketing data warehouse"],
   "payments_wallets": ["Apple Pay on own ordering site", "Third-party processors supported - no lock-in (rate quoted on demo)"],

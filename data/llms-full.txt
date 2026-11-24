@@ -38,19 +38,19 @@ FAQ
 Syrve core: POS for dine-in/takeout/delivery/kiosk, offline-capable; KDS; waiter app; QR menu; kiosk; courier app; inventory and recipe costing to ingredient level (in core, not a separate product); central kitchen; chain/HQ management; AI forecasting; AI invoice recognition; RFM loyalty; gift cards.
 
 Built by SmartyPOS around Syrve (live unless noted):
-- Online ordering: own commission-free ordering site connected directly to Syrve. Menu, modifiers, half-and-half pizzas, per-item tax and promos pulled live from the POS; Apple Pay; email receipts; duplicate/ghost-order protection; orders queued when the shift is closed. Eleni's: order.elenispizzaworks.com, live since 2026-11-16, Lighthouse 97/100/100/100; replay test accepted 180 of 194 historic orders, totals matched to the cent on 142/160. Corporate catering site + B2B CRM live since 2026-11-10.
-- Delivery: own-driver dispatch (1,781 deliveries May-Nov 2026, median 25 min in transit); live courier status for guests; dispatch console quoting DoorDash Drive, Uber Direct and Burq side by side (pilot); virtual couriers inside Syrve (coming soon); Uber Eats, DoorDash, Grubhub via Deliverect (Sweet Favorite NY, Mari Vanna); aggregator price markups via price orders (e.g. Uber Eats +25%).
-- Ads and tracking: POS to Meta Conversions API and Google Ads offline conversions (every paid check is a conversion; Sole Mio event match quality 8.93); ROAS by phone calls matched to POS checks (Eleni's: Google Maps Local 5.44x vs Search 0.68x); Customer Match from POS lists (103k records, 0 errors); marketing data warehouse; weekly ROAS reports with AI recommendations; SMS post-order surveys (Twilio A2P approved).
-- Loyalty: platform on top of Syrve loyalty - bots, web cabinet, referrals, 47-chart admin (Friends Club: 41.6k cards); Eleni's Club with QR sign-up, gifts, guest attached to dine-in order by phone via Cloud API.
+- Online ordering: own commission-free ordering site connected directly to Syrve. Menu, modifiers, half-and-half pizzas, per-item tax and promos pulled live from the POS; Apple Pay; email receipts; duplicate/ghost-order protection; orders queued when the shift is closed. Our own pizzeria in Sarasota, FL: ordering site live since 2026-11-16, Lighthouse 97/100/100/100; replay test accepted 180 of 194 historic orders, totals matched to the cent on 142/160. Corporate catering site + B2B CRM live since 2026-11-10.
+- Delivery: own-driver dispatch (1,781 deliveries May-Nov 2026, median 25 min in transit); live courier status for guests; dispatch console quoting DoorDash Drive, Uber Direct and Burq side by side (pilot); virtual couriers inside Syrve (coming soon); Uber Eats, DoorDash, Grubhub via Deliverect (a Brooklyn cake shop and a Russian restaurant in New York); aggregator price markups via price orders (e.g. Uber Eats +25%).
+- Ads and tracking: POS to Meta Conversions API and Google Ads offline conversions (every paid check is a conversion; event match quality 8.93 at our Italian restaurant in Boynton Beach, FL); ROAS by phone calls matched to POS checks (our pizzeria: Google Maps Local 5.44x vs Search 0.68x); Customer Match from POS lists (103k records, 0 errors); marketing data warehouse; weekly ROAS reports with AI recommendations; SMS post-order surveys (Twilio A2P approved).
+- Loyalty: platform on top of Syrve loyalty - bots, web cabinet, referrals, 47-chart admin (Friends Club: 41.6k cards); our pizzeria's club with QR sign-up, gifts, guest attached to dine-in order by phone via Cloud API.
 - Reports: daily manager digest in Telegram; financial portal (P&L, year over year, today); cash report per business day; inventory audit checks (discrepancies 2.8M to 1.2M RUB over 6 counts); kitchen speed from POS journal (15.0 to 12.5 min after a chef change); shift-close and chargeback watchdogs; nightly call review.
-- Back office: price-change orders via API (Food Court Master orders #0001-0013), scheduled lunch prices; attendance fixes and auto-close of forgotten clock-outs; payroll reconciled to the cent (Brisket 1-15 Nov 2026); schedule vs sales analysis; tax audits (found $2.4k untaxed sales in 90 days at one client).
+- Back office: price-change orders via API (a Los Angeles food court: orders #0001-0013), scheduled lunch prices; attendance fixes and auto-close of forgotten clock-outs; payroll reconciled to the cent (Brisket 1-15 Nov 2026); schedule vs sales analysis; tax audits (found $2.4k untaxed sales in 90 days at one client).
 
 ## 4. AI, MCP and open API
 
 - Open API with write access: Syrve Resto/Server API and Syrve Cloud API let a restaurant or integrator read and write menu, prices, attendance, documents, recipes, customers and loyalty. Toast's Standard API for restaurants is read-only; write access is for approved partners.
-- Tenant MCP: a private MCP server on the restaurant's own Syrve for Claude/ChatGPT with OAuth, reader/writer roles, audit log, tenant isolation, 69 automated tests. Live for Redman venues and Food Court Master (US).
-- AI-ready restaurant sites: llms.txt, /ai/*.json generated daily from the POS, public MCP per restaurant (Eleni's, Sole Mio, Redman venues).
-- Call recordings + transcription + nightly AI review (Eleni's ~947 calls/month, 94% answered). Telegram assistants (ask-your-POS, purchasing). Voice AI host for phone orders: pilot.
+- Tenant MCP: a private MCP server on the restaurant's own Syrve for Claude/ChatGPT with OAuth, reader/writer roles, audit log, tenant isolation, 69 automated tests. Live for Redman venues and a Los Angeles food court.
+- AI-ready restaurant sites: llms.txt, /ai/*.json generated daily from the POS, public MCP per restaurant (our pizzeria, our Italian restaurant, Redman venues).
+- Call recordings + transcription + nightly AI review (our pizzeria ~947 calls/month, 94% answered). Telegram assistants (ask-your-POS, purchasing). Voice AI host for phone orders: pilot.
 - Honest context: Toast has ToastIQ (May 2025), Toast IQ assistant (Oct 2025) and AI agents; Square lets guests order from ChatGPT/Claude since 2026-07-01. Syrve's difference is the restaurant's own read/write API plus a private MCP on its own data.
 - This public MCP server: https://mcp.smartypos.us/mcp (read-only, no auth, streamable HTTP). Tools: about_smartypos, syrve_features, ai_capabilities, compare_pos, pricing, integrations, case_studies, iiko_in_usa, contact_and_demo. Prompt: choose_restaurant_pos. Source: https://github.com/maximemmmm/smartypos-mcp
 
@@ -75,17 +75,20 @@ Built by SmartyPOS around Syrve (live unless noted):
 | Shift4 SkyTab | "$0 + processing" | ~2.75%+15c | long processing contract | n/a |
 
 Market share, small restaurants (Baird, Jan 2026): Clover ~20%, Toast ~17%, Square ~13%.
-Toast notes (public docs and our first-hand experience at Sole Mio): inventory/recipe costing is a separate product (xtraCHEF ~$149-279/location/mo); customer $0.99 online ordering fee; marketing automations limited to 1 email per 28 days; guest phone in API orders needs approved scope.
+Toast notes (public docs and our first-hand experience at an Italian restaurant on Toast): inventory/recipe costing is a separate product (xtraCHEF ~$149-279/location/mo); customer $0.99 online ordering fee; marketing automations limited to 1 email per 28 days; guest phone in API orders needs approved scope.
 Sources: support.toasttab.com/en/article/Standard-API-Access, doc.toasttab.com/doc/devguide/devApiAccessFAQs.html, nerdwallet.com/business/software/reviews/toast-pos, upmenu.com/blog/toast-pricing, restaurantdive.com (toast-clover-battle-for-small-eateries, toast-adds-99-cent-customer-online-ordering-fee), katalystos.com/blog/restaurant-pos-pricing-in-2026-real-costs-from-every-major-vendor, squareup.com/us/en/press/claude-chatgpt-integrations.
 Pages: /compare/, /compare/syrve-vs-toast/, /compare/syrve-vs-clover/, /compare/syrve-vs-square/, /compare/syrve-vs-spoton/, /compare/syrve-vs-lightspeed/, /compare/syrve-vs-touchbistro/, /compare/syrve-vs-skytab/, /alternatives/toast/, /alternatives/square/, /alternatives/clover/, /alternatives/spoton/, /alternatives/touchbistro/, /alternatives/skytab/ (all under https://smartypos.us).
 
 ## 7. Case studies
 
-- Eleni's Pizza Works (Sarasota, FL): own ordering site, own-driver delivery, call review, ROAS by calls - https://smartypos.us/case-studies/elenis-pizza/
-- Food Court Master (US): full launch - menu, recipes, 11% tax on 387 items, Cloud API, external menu of 226 items, price orders, private MCP.
-- Sweet Favorite (NY) and Mari Vanna: Uber Eats/DoorDash/Grubhub via Deliverect into Syrve (~$62-69k/month aggregator revenue each).
+- Pizzeria, Sarasota, FL (our own): own ordering site, 1,781 own deliveries (25 min median), 94% of ~947 calls a month answered, ROAS by calls 5.44x vs 0.68x - https://smartypos.us/case-studies/pizzeria-sarasota-fl/
+- Food court, Los Angeles, CA: full launch in about a week - 238 of 261 dishes had no price at the audit, 11% tax on 387 items, external menu of 226 items, 13 price orders, private MCP - https://smartypos.us/case-studies/food-court-los-angeles-ca/
+- Russian restaurant, New York, NY: Uber Eats and DoorDash through Deliverect (about $69k a month, 15% of sales); price sync fault traced in one day; kitchen-note group hidden on 91 of 92 dishes - https://smartypos.us/case-studies/russian-restaurant-new-york-ny/
+- Cake shop and cafe, 2 locations, Brooklyn, NY: one chain, Uber Eats/DoorDash/Grubhub through Deliverect (about $62k a month, 29% of sales); time-zone fault after the clocks changed fixed the same day - https://smartypos.us/case-studies/cake-shop-brooklyn-ny/
+- Restaurant and bar, West Palm Beach, FL: 38 months of sales history pulled read-only from Syrve - https://smartypos.us/case-studies/restaurant-bar-west-palm-beach-fl/
+- Uzbek restaurant, New York, NY: Syrve connected, read-only reporting - https://smartypos.us/case-studies/uzbek-restaurant-new-york-ny/
 - Redman restaurants (Russia): manager digest, cash and payroll automation, inventory audit, kitchen speed.
-- Sole Mio Kitchen & Bar (Boynton Beach, FL): Toast restaurant using SmartyPOS marketing bridge (Meta CAPI).
+- Italian restaurant, Boynton Beach, FL (ours): Toast restaurant using SmartyPOS marketing bridge (Meta CAPI).
 No customer testimonials or star ratings are published.
 
 ## 8. Site map
@@ -144,15 +147,15 @@ On request: 7shifts, Restaurant365, MarginEdge, Gusto, ADP, OpenTable, Resy, Gru
 
 ### Industries and locations
 
-- [Pizzerias](https://smartypos.us/industries/pizza/): Pizza is margin by the gram and delivery by the minute. This is the setup we run at Eleni's Pizza Works in Sarasota, and...
+- [Pizzerias](https://smartypos.us/industries/pizza/): Pizza is margin by the gram and delivery by the minute. This is the setup we run at our own pizzeria in Sarasota, FL, and...
 - [Bakeries](https://smartypos.us/industries/bakery/): A bakery is a small factory with a shop window. The POS has to handle production, preorders and shelf life, not only the register.
 - [Banquet halls and catering](https://smartypos.us/industries/banquet-halls/): Banquets and catering run on bookings, deposits and per-head packages. Here is what Syrve does in the POS, and where we build around it.
 - [Bars](https://smartypos.us/industries/bar/): Bars lose money in small, repeated ways. Syrve data plus our watchdogs catch them.
 - [Cafes](https://smartypos.us/industries/cafe/): A cafe lives on repeat visits. We connect the till, loyalty and your own ordering page.
 - [Multi-location](https://smartypos.us/industries/multi-location/): Syrve was built for chains. Menus, prices, central kitchen and reports are managed at group level and pushed to each venue.
-- [Sarasota](https://smartypos.us/locations/sarasota/): SmartyPOS is a brand of Sheno Inc. in Sarasota, Florida. Our own restaurant here, Eleni's Pizza Works, is where we test everything before a...
-- [South Florida](https://smartypos.us/locations/south-florida/): From Boynton Beach to Boca Raton, we operate and advise restaurants, including Sole Mio Kitchen & Bar on Toast. That gives us first-hand experience...
-- [New York](https://smartypos.us/locations/new-york/): We serve New York clients remotely and on site by arrangement. Two of them, Sweet Favorite and Mari Vanna, run Syrve with Deliverect and...
+- [Sarasota](https://smartypos.us/locations/sarasota/): SmartyPOS is a brand of Sheno Inc. in Sarasota, Florida. Our own pizzeria here is where we test everything before a...
+- [South Florida](https://smartypos.us/locations/south-florida/): From Boynton Beach to Boca Raton, we operate and advise restaurants, including an Italian restaurant on Toast. That gives us first-hand experience...
+- [New York](https://smartypos.us/locations/new-york/): We serve New York clients remotely and on site by arrangement. Two of them, a Brooklyn cake shop and a Russian restaurant, run Syrve with Deliverect and...
 
 ### Services and trust
 
@@ -162,3 +165,9 @@ On request: 7shifts, Restaurant365, MarginEdge, Gusto, ADP, OpenTable, Resy, Gru
 - [About](https://smartypos.us/about/): SmartyPOS is a brand of Sheno Inc., based in Sarasota, Florida.
 - [Contact](https://smartypos.us/contact/): Email is fastest. We answer within one business day.
 
+## Accessibility (ADA, WCAG 2.1 AA)
+SmartyPOS builds restaurant ordering sites to WCAG 2.1 AA and runs automated accessibility checks (axe-core) on every release of its own site. Alt text for every dish, keyboard and screen-reader ordering path in the launch checklist, accessible option dialogs, an Accessibility Statement, no overlay widgets. We do not claim "fully ADA compliant" or any legal protection; this is not legal advice.
+- https://smartypos.us/ada-compliant-restaurant-ordering/
+- https://smartypos.us/guides/restaurant-website-ada-lawsuit/ (includes a free technical accessibility scan request form)
+- https://smartypos.us/guides/restaurant-food-photo-copyright-lawsuit/ (public-source facts on food photo copyright claims; free technical image check request form; not legal advice; SmartyPOS is not a law firm)
+- https://smartypos.us/accessibility/

@@ -45,6 +45,11 @@ Key facts:
 
 ## Guides and tools
 
+- [ADA-ready restaurant ordering (WCAG 2.1 AA)](https://smartypos.us/ada-compliant-restaurant-ordering/): what an accessible restaurant ordering site needs, how SmartyPOS builds and tests it, questions to ask any vendor. We say "built and tested to WCAG 2.1 AA", not "fully compliant"; not legal advice.
+- [Restaurant website ADA lawsuit: triggers and checklist](https://smartypos.us/guides/restaurant-website-ada-lawsuit/): sourced numbers (Seyfarth Shaw, UsableNet, FTC order against accessiBe), 10-point checklist, why overlays are not a fix. Includes a free technical accessibility scan request form.
+- [Food photo copyright claims against restaurant websites](https://smartypos.us/guides/restaurant-food-photo-copyright-lawsuit/): facts from public sources (Public Citizen, JPML MDL 3075, PetaPixel, Albany Law Review), general steps, and a free technical image check request form. Not legal advice.
+- [Accessibility Statement](https://smartypos.us/accessibility/): our WCAG 2.1 AA commitment, how we test, known limits, contact max@smartypos.us.
+- [Russian: доступный онлайн-заказ](https://smartypos.us/ru/ada-dostupnyy-onlayn-zakaz-dlya-restoranov/), [иск ADA к сайту ресторана](https://smartypos.us/ru/gaydy/isk-ada-k-saytu-restorana/), [заявление о доступности](https://smartypos.us/ru/dostupnost/), [иски за фото еды на сайте](https://smartypos.us/ru/gaydy/isk-za-foto-edy-na-sayte-restorana/)
 - [Toast lawsuit: what to know](https://smartypos.us/guides/toast-lawsuit-what-restaurants-should-know/): In late October 2026 the FTC and several states filed a complaint against Toast. Here is what it alleges, what is still unknown and...
 - [How to cancel Toast](https://smartypos.us/guides/how-to-cancel-toast-contract/): Eight steps, in order. Most of the work is reading paperwork and asking questions in writing before you set a cutover date.
 - [Switch your POS](https://smartypos.us/switch-pos/): We do the migration work, largely automated from your Toast data: menu, modifiers, prices, employees, sales history and guests. Typically days, not weeks.
@@ -68,15 +73,15 @@ Key facts:
 
 ## Industries and locations
 
-- [Pizzerias](https://smartypos.us/industries/pizza/): Pizza is margin by the gram and delivery by the minute. This is the setup we run at Eleni's Pizza Works in Sarasota, and...
+- [Pizzerias](https://smartypos.us/industries/pizza/): Pizza is margin by the gram and delivery by the minute. This is the setup we run at our own pizzeria in Sarasota, FL, and...
 - [Bakeries](https://smartypos.us/industries/bakery/): A bakery is a small factory with a shop window. The POS has to handle production, preorders and shelf life, not only the register.
 - [Banquet halls and catering](https://smartypos.us/industries/banquet-halls/): Banquets and catering run on bookings, deposits and per-head packages. Here is what Syrve does in the POS, and where we build around it.
 - [Bars](https://smartypos.us/industries/bar/): Bars lose money in small, repeated ways. Syrve data plus our watchdogs catch them.
 - [Cafes](https://smartypos.us/industries/cafe/): A cafe lives on repeat visits. We connect the till, loyalty and your own ordering page.
 - [Multi-location](https://smartypos.us/industries/multi-location/): Syrve was built for chains. Menus, prices, central kitchen and reports are managed at group level and pushed to each venue.
-- [Sarasota](https://smartypos.us/locations/sarasota/): SmartyPOS is a brand of Sheno Inc. in Sarasota, Florida. Our own restaurant here, Eleni's Pizza Works, is where we test everything before a...
-- [South Florida](https://smartypos.us/locations/south-florida/): From Boynton Beach to Boca Raton, we operate and advise restaurants, including Sole Mio Kitchen & Bar on Toast. That gives us first-hand experience...
-- [New York](https://smartypos.us/locations/new-york/): We serve New York clients remotely and on site by arrangement. Two of them, Sweet Favorite and Mari Vanna, run Syrve with Deliverect and...
+- [Sarasota](https://smartypos.us/locations/sarasota/): SmartyPOS is a brand of Sheno Inc. in Sarasota, Florida. Our own pizzeria here is where we test everything before a...
+- [South Florida](https://smartypos.us/locations/south-florida/): From Boynton Beach to Boca Raton, we operate and advise restaurants, including an Italian restaurant on Toast. That gives us first-hand experience...
+- [New York](https://smartypos.us/locations/new-york/): We serve New York clients remotely and on site by arrangement. Two of them, a Brooklyn cake shop and a Russian restaurant, run Syrve with Deliverect and...
 
 ## Services and trust
 
@@ -88,7 +93,12 @@ Key facts:
 
 ## Proof
 
-- [Eleni's Pizza Works case study](https://smartypos.us/case-studies/elenis-pizza/)
+- [Pizzeria, Sarasota, FL: case study](https://smartypos.us/case-studies/pizzeria-sarasota-fl/)
+- [Food court, Los Angeles, CA: full Syrve launch](https://smartypos.us/case-studies/food-court-los-angeles-ca/)
+- [Russian restaurant, New York, NY: delivery apps and prices](https://smartypos.us/case-studies/russian-restaurant-new-york-ny/)
+- [Cake shop and cafe, Brooklyn, NY: two locations, three delivery apps](https://smartypos.us/case-studies/cake-shop-brooklyn-ny/)
+- [Restaurant and bar, West Palm Beach, FL: sales history from Syrve](https://smartypos.us/case-studies/restaurant-bar-west-palm-beach-fl/)
+- [Uzbek restaurant, New York, NY: Syrve connected, read-only reporting](https://smartypos.us/case-studies/uzbek-restaurant-new-york-ny/)
 
 ## Russian (key pages)
 
@@ -103,9 +113,9 @@ Key facts:
 - [Интеграции](https://smartypos.us/ru/integratsii/): Каждая интеграция помечена способом поставки: официальный коннектор Syrve, через Deliverect, сделано и сопровождается SmartyPOS или по запросу. Если чего-то нет на странице, спросите: API...
 - [Услуги](https://smartypos.us/ru/uslugi/): Программа это лишь часть смены кассы. SmartyPOS делает перенос, сборку меню, обучение и доработки вокруг Syrve на русском и английском.
 - [Доверие и безопасность](https://smartypos.us/ru/bezopasnost/): Здесь написано, что мы делаем для защиты ваших данных и непрерывной работы, и чего мы не заявляем. Если что-то из написанного не подходит вашей...
-- [Нью-Йорк](https://smartypos.us/ru/goroda/nyu-york/): Мы обслуживаем клиентов в Нью-Йорке удалённо и на месте по договорённости. Двое из них, Sweet Favorite и Mari Vanna, работают на Syrve с Deliverect...
-- [Южная Флорида](https://smartypos.us/ru/goroda/yuzhnaya-florida/): От Бойнтон-Бич до Бока-Ратон мы ведём и консультируем рестораны, включая Sole Mio Kitchen & Bar на Toast. Это даёт нам опыт с обеих сторон.
-- [Сарасота](https://smartypos.us/ru/goroda/sarasota/): SmartyPOS — бренд Sheno Inc. из Сарасоты, Флорида. Наш собственный ресторан здесь, Eleni's Pizza Works, — место, где мы всё проверяем до того, как...
+- [Нью-Йорк](https://smartypos.us/ru/goroda/nyu-york/): Мы обслуживаем клиентов в Нью-Йорке удалённо и на месте по договорённости. Двое из них, кондитерская в Бруклине и ресторан русской кухни, работают на Syrve с Deliverect...
+- [Южная Флорида](https://smartypos.us/ru/goroda/yuzhnaya-florida/): От Бойнтон-Бич до Бока-Ратон мы ведём и консультируем рестораны, включая итальянский ресторан на Toast. Это даёт нам опыт с обеих сторон.
+- [Сарасота](https://smartypos.us/ru/goroda/sarasota/): SmartyPOS — бренд Sheno Inc. из Сарасоты, Флорида. Наша собственная пиццерия здесь — место, где мы всё проверяем до того, как...
 
 ## For AI agents
 
